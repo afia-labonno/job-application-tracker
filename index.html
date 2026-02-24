@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="nord">
 
 <head>
     <meta charset="UTF-8">
@@ -34,22 +34,22 @@
 
     <header class="w-full lg:w-[80%] mx-auto space-y-4 p-5 sm:p-6">
 
-        <h1 class="text-info-content font-bold text-3xl sm:text-4xl text-center sm:text-left">Job Application Tracker</h1>
+        <h1 class="text-info-content font-semibold sm:font-bold text-2xl sm:text-4xl text-center sm:text-left">Job Application Tracker</h1>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-4">
 
             <div class="bg-base-100 shadow-md rounded-lg px-4 py-2">
-                <p class="text-gray-700">Total</p>
+                <p class="text-gray-700 text-sm sm:text-base">Total</p>
                 <p id="total-count-tab" class="text-info-content font-bold">8</p>
             </div>
 
             <div class="bg-base-100 shadow-md rounded-lg px-4 py-2">
-                <p class="text-gray-700">Interview</p>
+                <p class="text-gray-700 text-sm sm:text-base">Interview</p>
                 <p id="interview-count-tab" class="text-green-600 font-bold">0</p>
             </div>
 
             <div class="bg-base-100 shadow-md rounded-lg px-4 py-2">
-                <p class="text-gray-700">Rejected</p>
+                <p class="text-gray-700 text-sm sm:text-base">Rejected</p>
                 <p id="rejected-count-tab" class="text-red-500 font-bold">0</p>
             </div>
 
@@ -61,8 +61,7 @@
     <main class="w-full lg:w-[80%] mx-auto p-4 sm:p-6">
         <div class="flex justify-between mb-4">
             <div>
-                <h2 class="text-info-content text-xl sm:font-semibold text-center sm:text-3xl sm:text-left">Available
-                    Jobs</h2>
+                <h2 class="text-info-content text-xl  font-semibold sm:font-semibold text-center sm:text-3xl sm:text-left">Available Jobs</h2>
             </div>
             <div>
                 <p id="jobs-count" class="text-gray-500 font-medium text-center sm:text-right">8 jobs</p>
@@ -70,32 +69,32 @@
         </div>
 
         <div class="mb-6 flex gap-3 sm:gap-4 items-center sm:items-start">
-            <button id="all-filter-btn" class="btn bg-blue-400 shadow-md text-white px-5 py-2 rounded-md">All</button>
-            <button id="interview-filter-btn"
-                class=" btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md">Interview</button>
-            <button id="rejected-filter-btn"
-                class="btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md">Rejected</button>
+
+            <button id="all-filter-btn" class="btn bg-blue-400 shadow-md text-white px-5 py-2 rounded-md text-sm sm:text-base">All</button>
+            <button id="interview-filter-btn" class=" btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md text-sm sm:text-base">Interview</button>
+            <button id="rejected-filter-btn"class="btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md text-sm sm:text-base">Rejected</button>
+
         </div>
     </main>
 
-    <section id="allJobs" class="w-[80%] mx-auto space-y-8">
+    <section id="allJobs" class="w-full sm:w-11/12 lg:w-[80%] mx-auto space-y-6 sm:space-y-8 px-3">
         <!-- cards -->
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">Mobile First Corp</h2>
-                    <p class="position">React Native Developer</p>
+                    <h2 class="companyName text-info-content font-semibold text-xl sm:text-2xl">Mobile First Corp</h2>
+                    <p class="position text-sm sm:text-base">React Native Developer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">Remote</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$130,000 - $175,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Build cross-platform mobile applications using React Native. Work on products
+                <p class="job-description text-sm sm:text-base">Build cross-platform mobile applications using React Native. Work on products
                     used by millions of users worldwide.</p>
 
                 <div class="flex gap-4">
@@ -110,22 +109,22 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">WebFlow Agency</h2>
-                    <p class="position">Web Designer & Developer</p>
+                    <h2 class="companyName text-info-content font-semibold text-xl sm:text-2xl">WebFlow Agency</h2>
+                    <p class="position text-sm sm:text-base">Web Designer & Developer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">Los Angeles, CA</p>
                     <li id="type">Part-time</li>
                     <li id="salary">$80,000 - $120,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Create stunning web experiences for high-profile clients. Must have portfolio
+                <p class="job-description text-sm sm:text-base">Create stunning web experiences for high-profile clients. Must have portfolio
                     and experience with modern web design trends.</p>
 
                 <div class="flex gap-4">
@@ -140,22 +139,22 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">DataViz Solutions</h2>
-                    <p class="position">Data Visualization Specialist</p>
+                    <h2 class="companyName text-info-content font-semibold text-xl sm:text-2xl">DataViz Solutions</h2>
+                    <p class="position text-sm sm:text-base">Data Visualization Specialist</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">Boston, MA</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$125,000 - $165,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Transform complex data into compelling visualizations. Required skills:
+                <p class="job-description text-sm sm:text-base">Transform complex data into compelling visualizations. Required skills:
                     D3.js, React, and strong analytical thinking.</p>
 
                 <div class="flex gap-4">
@@ -170,22 +169,22 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">CloudFirst Inc</h2>
-                    <p class="position">Backend Developer</p>
+                    <h2 class="companyName text-info-content font-semibold text-xl sm:text-2xl">CloudFirst Inc</h2>
+                    <p class="position text-sm sm:text-base">Backend Developer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">Seattle, WA</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$140,000 - $190,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Design and maintain scalable backend systems using Python and AWS. Work with
+                <p class="job-description text-sm sm:text-base">Design and maintain scalable backend systems using Python and AWS. Work with
                     modern DevOps practices and cloud infrastructure.</p>
 
                 <div class="flex gap-4">
@@ -200,22 +199,22 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">Innovation Labs</h2>
-                    <p class="position">UI/UX Engineer</p>
+                    <h2 class="companyName text-info-content font-semibold text-xl sm:text-2xl">Innovation Labs</h2>
+                    <p class="position text-sm sm:text-base">UI/UX Engineer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">Austin, TX</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$110,000 - $150,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Create beautiful and functional user interfaces for our suite of products.
+                <p class="job-description text-sm sm:text-base">Create beautiful and functional user interfaces for our suite of products.
                     Strong design skills and frontend development expertise required.</p>
 
                 <div class="flex gap-4">
@@ -230,22 +229,22 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">MegaCorp Solutions</h2>
-                    <p class="position">JavaScript Developer</p>
+                    <h2 class="companyName text-info-content font-semibold  text-xl sm:text-2xl">MegaCorp Solutions</h2>
+                    <p class="position text-sm sm:text-base">JavaScript Developer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">New York, NY</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$130,000 - $170,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Build enterprise applications with JavaScript and modern frameworks. We offer
+                <p class="job-description text-sm sm:text-base">Build enterprise applications with JavaScript and modern frameworks. We offer
                     competitive compensation, health insurance, and professional development opportunities.</p>
 
                 <div class="flex gap-4">
@@ -260,22 +259,22 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4">
             <!-- left -->
             <div class="space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">StartupXYZ</h2>
-                    <p class="position">Full Stack Engineer</p>
+                    <h2 class="companyName text-info-content font-semibold text-xl sm:text-2xl">StartupXYZ</h2>
+                    <p class="position text-sm sm:text-base">Full Stack Engineer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">Remote</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$120,000 - $160,000</li>
                 </div>
 
                 <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">Join our fast-growing startup and work on our core platform. Experience with
+                <p class="job-description text-sm sm:text-base">Join our fast-growing startup and work on our core platform. Experience with
                     Node.js and React required. Great benefits and equity package included.</p>
 
                 <div class="flex gap-4">
@@ -290,28 +289,28 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-base-100 shadow-lg rounded-lg px-5 py-4">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 bg-base-100 shadow-lg rounded-lg px-4 sm:px-5 py-4 sm:mb-5">
             <!-- left -->
-            <div class="space-y-6">
+            <div class="space-y-4 sm:space-y-6">
                 <div>
-                    <h2 class="companyName text-info-content font-semibold text-2xl">TechCorp Industries</h2>
-                    <p class="position">Senior Frontend Developer</p>
+                    <h2 class="companyName text-info-content font-semibold  text-xl sm:text-2xl">TechCorp Industries</h2>
+                    <p class="position text-sm sm:text-base">Senior Frontend Developer</p>
                 </div>
 
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                     <p class="location">San Francisco, CA</p>
                     <li id="type">Full-time</li>
                     <li id="salary">$130,000 - $175,000</li>
                 </div>
 
-                <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
-                <p class="job-description">We are looking for an experienced Frontend Developer to build scalable web
+                <button class="job-status bg-blue-50 text-sm sm:text-base px-5 py-6">Not Applied</button>
+                <p class="job-description text-sm sm:text-base">We are looking for an experienced Frontend Developer to build scalable web
                     applications using React and TypeScript. You will work with a talented team on cutting-edge
                     projects.</p>
 
-                <div class="flex gap-4">
-                    <button class="interview-btn btn btn-outline btn-success">Interview</button>
-                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
+                <div class="flex gap-3 sm:gap-4">
+                    <button class="interview-btn btn btn-outline btn-success ">Interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error ">Rejected</button>
                 </div>
             </div>
 
