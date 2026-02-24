@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisy + tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+<header class="w-[80%] mx-auto space-y-4 p-5">
+    <h1 class="text-info-content font-bold text-3xl">Job Application Tracker</h1>
+    <div class="grid grid-cols-3 justify-between gap-4">
+        <div class="bg-base-100 shadow-md rounded-lg px-4 py-2">
+            <p class="text-gray-700">Total</p>
+            <p id="total-count-tab" class="text-info-content font-bold">8</p>
+        </div>
+
+        <div class="bg-base-100 shadow-md rounded-lg px-4 py-2">
+            <p class="text-gray-700">Interview</p>
+            <p id="interview-count-tab" class="text-green-600 font-bold">0</p>
+        </div>
+
+        <div class="bg-base-100 shadow-md rounded-lg px-4 py-2">
+            <p class="text-gray-700">Rejected</p>
+            <p id="rejected-count-tab" class="text-red-500 font-bold">0</p>
+        </div>
+    </div>
+</header>
+
+</body>
+
+</html>
