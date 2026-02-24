@@ -11,14 +11,19 @@ const allFilterBtn = document.getElementById('all-filter-btn');
 const interviewFilterBtn = document.getElementById('interview-filter-btn');
 const rejectedFilterBtn = document.getElementById('rejected-filter-btn');
 
+const jobsCount = document.getElementById('jobs-count');
+
 const allJobs = document.getElementById('allJobs');
 const mainContainer = document.querySelector('main');
 const filteredSection = document.getElementById('filtered-section');
 
 function calculateCount() {
-    totalCount.innerText = allJobs.children.length;
+    const totalJob = allJobs.children.length;
+    totalCount.innerText = totalJob;
     interviewCount.innerText = interviewList.length;
     rejectedCount.innerText = rejectedList.length;
+
+    jobsCount.innerText = `${totalJob}jobs`;
 }
 calculateCount();
 
@@ -127,6 +132,14 @@ mainContainer.addEventListener('click', function(event){
 
     }
 
+    // Delete card
+        if (event.target.closest('.btn-circle')) {
+        parentNode.remove();
+        calculateCount();
+        return;
+
+    }
+
 })
 
 
@@ -165,7 +178,7 @@ function renderInterview(){
 
                 <!-- rigt -->
                 <div>
-                    <button class="btn btn-circle"><i class="fa-regular fa-trash-can"></i></button>
+                    <button class="delete-btn btn btn-circle"><i class="fa-regular fa-trash-can"></i></button>
                 </div>
 
         ` ;
@@ -208,7 +221,7 @@ function renderRejected(){
 
                 <!-- rigt -->
                 <div>
-                    <button class="btn btn-circle"><i class="fa-regular fa-trash-can"></i></button>
+                    <button class="delete-btn btn btn-circle"><i class="fa-regular fa-trash-can"></i></button>
                 </div>
 
         ` ;
