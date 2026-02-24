@@ -73,11 +73,11 @@
 
         <div class="mb-6 flex gap-3 sm:gap-4 items-center sm:items-start">
 
-            <button id="all-filter-btn"
+            <button id="all-filter-btn" onclick="toggle('all-filter-btn')"
                 class="btn bg-blue-400 shadow-md text-white px-5 py-2 rounded-md text-sm sm:text-base">All</button>
-            <button id="interview-filter-btn"
+            <button id="interview-filter-btn" onclick="toggle('interview-filter-btn')"
                 class=" btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md text-sm sm:text-base">Interview</button>
-            <button id="rejected-filter-btn"
+            <button id="rejected-filter-btn" onclick="toggle('rejected-filter-btn')"
                 class="btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md text-sm sm:text-base">Rejected</button>
 
         </div>
@@ -95,11 +95,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">Remote</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$130,000 - $175,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$130,000 - $175,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Build cross-platform mobile applications using React
                         Native. Work on products
                         used by millions of users worldwide.</p>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
 
-                <!-- rigt -->
+                <!-- right -->
                 <div>
                     <button class="btn btn-circle"><i class="fa-regular fa-trash-can"></i></button>
                 </div>
@@ -126,11 +126,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">Los Angeles, CA</p>
-                        <li id="type">Part-time</li>
-                        <li id="salary">$80,000 - $120,000</li>
+                        <li class="type">Part-time</li>
+                        <li class="salary">$80,000 - $120,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Create stunning web experiences for high-profile
                         clients. Must have portfolio
                         and experience with modern web design trends.</p>
@@ -158,11 +158,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">Boston, MA</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$125,000 - $165,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$125,000 - $165,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Transform complex data into compelling
                         visualizations. Required skills:
                         D3.js, React, and strong analytical thinking.</p>
@@ -189,11 +189,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">Seattle, WA</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$140,000 - $190,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$140,000 - $190,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Design and maintain scalable backend systems using
                         Python and AWS. Work with
                         modern DevOps practices and cloud infrastructure.</p>
@@ -220,11 +220,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">Austin, TX</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$110,000 - $150,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$110,000 - $150,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Create beautiful and functional user interfaces for
                         our suite of products.
                         Strong design skills and frontend development expertise required.</p>
@@ -252,11 +252,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">New York, NY</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$130,000 - $170,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$130,000 - $170,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Build enterprise applications with JavaScript and
                         modern frameworks. We offer
                         competitive compensation, health insurance, and professional development opportunities.</p>
@@ -283,11 +283,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">Remote</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$120,000 - $160,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$120,000 - $160,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 px-5 py-2">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">Join our fast-growing startup and work on our core
                         platform. Experience with
                         Node.js and React required. Great benefits and equity package included.</p>
@@ -315,11 +315,11 @@
 
                     <div class="flex flex-wrap gap-3 sm:gap-8 text-sm sm:text-base">
                         <p class="location">San Francisco, CA</p>
-                        <li id="type">Full-time</li>
-                        <li id="salary">$130,000 - $175,000</li>
+                        <li class="type">Full-time</li>
+                        <li class="salary">$130,000 - $175,000</li>
                     </div>
 
-                    <button class="job-status bg-blue-50 text-sm sm:text-base px-5 py-6">Not Applied</button>
+                    <p class="job-status w-1/6 bg-blue-50 text-sm sm:text-base px-5 py-2">Not Applied</p>
                     <p class="job-description text-sm sm:text-base">We are looking for an experienced Frontend Developer
                         to build scalable web
                         applications using React and TypeScript. You will work with a talented team on cutting-edge
@@ -338,6 +338,9 @@
             </div>
 
         </section>
+
+        <!-- Filtered Section -->
+        <section id="filtered-section" class="hidden"></section>
     </main>
 
 
