@@ -10,8 +10,8 @@ let rejectedCount = document.getElementById('rejected-count-tab');
 const allFilterBtn = document.getElementById('all-filter-btn');
 const interviewFilterBtn = document.getElementById('interview-filter-btn');
 const rejectedFilterBtn = document.getElementById('rejected-filter-btn');
-
 const jobsCount = document.getElementById('jobs-count');
+const emptyCard = document.getElementById('empty-cards');
 
 const allJobs = document.getElementById('allJobs');
 const mainContainer = document.querySelector('main');
@@ -24,6 +24,10 @@ function calculateCount() {
     rejectedCount.innerText = rejectedList.length;
 
     jobsCount.innerText = `${totalJob}jobs`;
+
+    if(currentStatus === "all-filter-btn"){
+        toggleEmptyCard(totalJob);
+    }
 }
 calculateCount();
 
@@ -56,6 +60,15 @@ function toggle(id){
     filteredSection.classList.remove('hidden')
     renderRejected();
    }
+}
+
+
+function toggleEmptyCard(count){
+    if(count === 0){
+        emptyCard.classList.remove('hidden');
+    } else {
+        emptyCard.classList.add('hidden');
+    }
 }
 
 
@@ -132,11 +145,21 @@ mainContainer.addEventListener('click', function(event){
 
     }
 
-    // Delete card
+    // Delete job
         if (event.target.closest('.btn-circle')) {
-        parentNode.remove();
-        calculateCount();
-        return;
+            const companyName = parentNode.querySelector('.companyName').innerText;
+            interviewList = interviewList.filter(item => item.companyName !== companyName);
+            rejectedList = rejectedList.filter(item => item.companyName !== companyName);
+            parentNode.remove();
+            
+            calculateCount();
+
+            if(currentStatus === 'interview-filter-btn'){
+                renderInterview();
+            }
+            if(currentStatus === 'rejected-filter-btn'){
+                renderRejected();
+            }
 
     }
 
@@ -184,6 +207,7 @@ function renderInterview(){
         ` ;
         filteredSection.appendChild(div);
     }
+    toggleEmptyCard(interviewList.length);
 }
 
 function renderRejected(){
@@ -227,5 +251,6 @@ function renderRejected(){
         ` ;
         filteredSection.appendChild(div);
     }
+    toggleEmptyCard(rejectedList.length);
 }
 

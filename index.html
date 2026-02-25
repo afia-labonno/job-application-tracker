@@ -75,7 +75,7 @@
 
             <button id="all-filter-btn" onclick="toggle('all-filter-btn')"
                 class="btn bg-blue-400 shadow-md text-white px-5 py-2 rounded-md text-sm sm:text-base">All</button>
-            <button id="interview-filter-btn" onclick="toggle('interview-filter-btn')"
+            <button id="interview-filter-btn" onclick="toggle('interview-filter-btn')" 
                 class=" btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md text-sm sm:text-base">Interview</button>
             <button id="rejected-filter-btn" onclick="toggle('rejected-filter-btn')"
                 class="btn bg-base-100 shadow-md text-gray-600 px-5 py-2 rounded-md text-sm sm:text-base">Rejected</button>
@@ -341,6 +341,15 @@
 
         <!-- Filtered Section -->
         <section id="filtered-section" class="hidden"></section>
+
+        <!-- Empty-card -->
+        <section id="empty-cards" class="hidden space-y-6 sm:space-y-8">
+            <div class="flex flex-col items-center text-center m-16">
+                <img src="./assets/jobs.png" alt="" class="items-center">
+                <h2 class="text-info-content font-semibold">No jobs available</h2>
+                <p class="text-gray-500">Check back soon for new job opportunities</p>
+            </div>
+        </section>
     </main>
 
 
